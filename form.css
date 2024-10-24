@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --semi-transparent-bg: rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url("Norse-Bold.otf") format("opentype");
+}
+
+body {
+  background-color: #0E0E0E;
+  max-width: 100%;
+}
+
+.container {
+    background-color: #f9fafb;
+    max-width: 65%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.odin-image {
+    width: 317px;
+    background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.odin-image-z {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    padding: 10px;
+    background-color: var(--semi-transparent-bg);
+}
+.odin-image-z img {
+    width: 55px;
+}
+
+.odin-image-z h2{
+    font-family: 'Norse', sans-serif;
+    color: white;
+    font-size: 4em;
+}
+
+.info-text{
+    margin-top: 90px;
+    margin-bottom: 44px;
+    max-width: 486px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ov-form{
+    width: 100%;
+    background-color: white;
+    padding: 14px 0 23px 0;
+    border: none;
+    border-bottom: 5px solid transparent;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 5px; 
+}
+
+.form-field{
+    border: none;
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.grid-field{
+    display: grid;
+    grid-template-columns: repeat(2, 153px);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+    column-gap: 42px;
+}
+
+input{
+    padding: 5px;
+    border-color: 2px solid #E5E7EB;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    outline: none;
+}
+
+input[type="password"]:invalid{
+    border-color: red;
+}
+
+.btn{
+    margin-top: 18px;
+}
+
+button{
+    background-color: #596D48;
+    padding: 10px 29px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn > p{
+    margin-top: 19px;
+    font-weight: 500;
+}
+
+.btn a{
+ text-decoration: none;
+ color: #596D48;
+}
+
